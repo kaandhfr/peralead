@@ -1,0 +1,30 @@
+// create own your map
+$h7-font-size: $font-size-base * 0.875;
+$h8-font-size: $font-size-base * 0.75;
+$h9-font-size: $font-size-base * 0.625;
+
+$custom-font-sizes: (
+    7: $h7-font-size,
+    8: $h8-font-size,
+    9: $h9-font-size
+);
+
+// Create your own map
+$custom-colors: (
+  "primary": #2A2A2A,
+  "secondary": #121212,
+  "third": #0A0A0A,
+  "fourth": #198754,
+  "fifth": #dc3545,
+  "color-text": #F5F5F5,
+  "color-sub-text": #CCCCCC,
+  "color-border": #4E4E4E,
+  "color-background": #121212,
+  "light": #f0f0f0,
+  "white": #FFFFFF
+);
+
+// Merge and remove maps
+$font-sizes: map-merge($font-sizes, $custom-font-sizes);
+$theme-colors: map-remove($theme-colors);
+$theme-colors: map-merge($theme-colors, $custom-colors);

@@ -1,0 +1,315 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+@import "theme";
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../../node_modules/bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+@import "theme-maps";
+
+// 5. Include remainder of required parts
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+
+// Components
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/button-group";
+@import "../../node_modules/bootstrap/scss/nav";
+// @import "../../node_modules/bootstrap/scss/navbar";
+// @import "../../node_modules/bootstrap/scss/card";
+// @import "../../node_modules/bootstrap/scss/accordion";
+// @import "../../node_modules/bootstrap/scss/breadcrumb";
+// @import "../../node_modules/bootstrap/scss/pagination";
+// @import "../../node_modules/bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/alert";
+// @import "../../node_modules/bootstrap/scss/progress";
+@import "../../node_modules/bootstrap/scss/list-group";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/toasts";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/tooltip";
+// @import "../../node_modules/bootstrap/scss/popover";
+// @import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/spinners";
+@import "../../node_modules/bootstrap/scss/offcanvas";
+@import "../../node_modules/bootstrap/scss/placeholders";
+
+@import "../../node_modules/bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+// @Fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+a {
+    color: var(--bs-color-text);
+    text-decoration: none;
+}
+
+a.instagram:hover {
+    color: #d62a76;
+}
+a.facebook:hover {
+    color: #475993;
+}
+a.twitter:hover {
+    color: #55acee;
+}
+a.youtube:hover {
+    color: #f62125;
+}
+
+a.no-hover:hover {
+    color: inherit;
+}
+
+i[class^="flaticon-"] {
+    line-height: normal !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain,
+.cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -o-object-position: center center;
+    object-position: center center;
+}
+
+.cover {
+    background-size: cover;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.contain {
+    background-size: contain;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+img {
+    max-width: 100%;
+}
+
+input,
+output,
+textarea,
+select,
+button {
+    outline: none;
+}
+
+input.hide-appearance[type="number"]::-webkit-outer-spin-button,
+input.hide-appearance[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.appearance-none {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.fw-thin {
+    font-weight: 200 !important;
+}
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+.fw-extrabold {
+    font-weight: 800 !important;
+}
+
+.fw-extrabold-black {
+    font-weight: 900 !important;
+}
+
+small {
+    font-size: 0.825em;
+}
+
+body {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1000px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.00) 100%);
+        z-index: -1;
+    }
+}
+
+// @Header
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 98;
+    .menu-items {
+        li {
+            > a {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: calc(100% + 0.75rem);
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 16px;
+                    height: 3px;
+                    border-radius: 50rem;
+                    background-color: var(--bs-color-sub-text);
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.15s ease-in-out;
+                }
+                &:hover {
+                    &::after {
+                        top: calc(100%);
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.user-login-btn {
+    padding: 0.65rem 1.5rem;
+}
+
+#header-bottom {
+    .header-bottom-left {
+        gap: 1.5rem;
+    }
+    .search-menu {
+        input {
+            width: 10.5rem;
+            height: 2.5rem;
+            padding-left: 2.75rem;
+            transition: box-shadow 0.2s ease-in-out;
+            &:focus {
+                box-shadow: 0px 0px 2px 2px var(--bs-color-border);
+            }
+        }
+    }
+    .popular-tags {
+        gap: 1.25rem;
+        li {
+            > a {
+                color: rgba(var(--bs-color-sub-text-rgb), 0.5);
+                transition: all 0.2s ease;
+                &:hover {
+                    color: var(--bs-white);
+                }
+            }
+        }
+    }
+    .user-actions {
+        a {
+            transition: all 0.2s ease;
+            svg {
+                path {
+                    transition: all 0.2s ease;
+                }
+            }
+            &:hover {
+                --bs-text-opacity: 1;
+                svg {
+                    path {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    padding-bottom: 8.25rem;
+}
+
+#footer {
+    .footer-menu {
+        &-content {
+            p {
+                color: var(--bs-color-sub-text);
+                margin-bottom: 1.5rem;
+            }
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .footer-social {
+        .footer-social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+            &:hover {
+                border-color: var(--bs-color-border);
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES
+@media (max-width: 1199px) {
+    html {
+        font-size: 14px;
+    }
+}

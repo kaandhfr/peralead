@@ -1,0 +1,43 @@
+// scss-docs-start font değişkenleri
+$font-family-base: 'Montserrat', sans-serif;
+// $font-family-sub: 'Open Sans', sans-serif;
+
+// scss-docs-start `<body>` tag'ine uygulanan ayarlar.
+$body-bg: #121212;
+$body-color: #F5F5F5;
+// scss-docs-end `<body>` tag'ine uygulanan ayarlar.
+
+// scss-docs-start theme-color-variables
+// $primary: #0d6efd;
+// $secondary: #6c757d;
+// $success: #198754;
+// $info: #0dcaf0;
+// $warning: #ffc107;
+// $danger: #dc3545;
+// $light: #f8f9fa;
+// $dark: #212529;
+
+// scss-docs-end theme-color-variables
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px, 
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px
+);
+// scss-docs-end grid-breakpoints
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1462px
+);
+// scss-docs-end container-max-widths
