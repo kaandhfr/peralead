@@ -52,10 +52,10 @@ const peraleadHome = {
 
 document.addEventListener("DOMContentLoaded", () => {
     peraleadHome.entrySlider.on('slideChangeTransitionStart', function () {
-        entrySliderThumbs.slideTo(entrySlider.activeIndex);
+        peraleadHome.entrySliderThumbs.slideTo(peraleadHome.entrySlider.activeIndex);
     });
     peraleadHome.entrySliderThumbs.on('transitionStart', function () {
-        entrySlider.slideTo(entrySliderThumbs.activeIndex);
+        peraleadHome.entrySlider.slideTo(peraleadHome.entrySliderThumbs.activeIndex);
     });
 
     peraleadHome.sticky();
