@@ -127,6 +127,9 @@
                 -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
+                @media (max-width: 1199px) {
+                    -webkit-line-clamp: 2;
+                }
             }
             .blog-author-name {
                 transition: color 0.2s ease;
@@ -134,6 +137,11 @@
                     color: #fff !important;
                 }
             }
+        }
+    }
+    &:last-child {
+        .blog-item-inner {
+            padding-bottom: 0;
         }
     }
     &:hover {
@@ -164,6 +172,7 @@
         margin-bottom: 0;
     }
     &-image {
+        width: 26%;
         flex-shrink: 0;
         img {
             height: auto;

@@ -295,13 +295,25 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            color: var(--bs-color-sub-text);
             width: 3rem;
             height: 3rem;
             border-radius: 50%;
             transition: all 0.2s ease;
             border: 1px solid transparent;
+            svg {
+                opacity: 0.5;
+                transition: all 0.2s ease;
+                path {
+                    fill: currentColor;
+                }
+            }
             &:hover {
-                border-color: var(--bs-color-border);
+                svg {
+                    opacity: 1;
+                }
+                color: var(--bs-color-white);
+                border-color: var(--bs-color-white);
             }
         }
     }

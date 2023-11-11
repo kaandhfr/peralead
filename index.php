@@ -179,7 +179,7 @@
 
             <section class="blog-list-section">
                 <div id="blog-list-section" class="row">
-                    <div class="col-xl-9">
+                    <div class="col-lg-9">
                         <section class="blog-list">
                             <?php for ($i = 0; $i < 6; $i++) : ?>
                                 <article class="blog-item d-flex">
@@ -260,7 +260,7 @@
                             <?php endfor; ?>
                         </section>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-lg-3 d-lg-block d-none">
                         <aside id="sidebar-wrapper">
                             <aside id="blog-sidebar" class="blog-sidebar">
                                 <section class="sidebar-item mb-5">
