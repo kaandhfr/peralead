@@ -34,7 +34,7 @@ function BlogSidebar({ title, data, limit, className }) {
                       className="w-[82px] h-[79px] bg-third rounded-[0.5rem] object-cover"
                     />
                     <img src={blog.images[0].thumbPath} alt={blog.images[0].alt} width={82}
-                      height={79} className="w-[82px] h-[79px] rounded-[0.5rem] object-cover" />
+                      height={79} className="w-[82px] h-[79px] bg-third rounded-[0.5rem] object-cover" />
                   </Link>
                   <h5 className="text-base font-semibold line-clamp-3">
                     <Link to={""}>{blog.title}</Link>
