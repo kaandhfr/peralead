@@ -31,7 +31,7 @@ function BlogSidebar({ title, data, limit, className }) {
                       alt={blog.images[0].alt}
                       width={82}
                       height={79}
-                      className="w-[82px] h-[79px] rounded-[0.5rem] object-cover"
+                      className="w-[82px] h-[79px] bg-third rounded-[0.5rem] object-cover"
                     />
                     <img src={blog.images[0].thumbPath} alt={blog.images[0].alt} width={82}
                       height={79} className="w-[82px] h-[79px] rounded-[0.5rem] object-cover" />
