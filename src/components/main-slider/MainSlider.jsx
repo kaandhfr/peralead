@@ -66,7 +66,7 @@ function MainSlider({className}) {
                       alt={blog.images[0].alt}
                       width={1072}
                       height={648}
-                      className="rounded-[1rem] w-full aspect-[16/9] lg:aspect-[656/412] xl:aspect-[1091/648] object-cover"
+                      className="rounded-[1rem] bg-third w-full aspect-[16/9] lg:aspect-[656/412] xl:aspect-[1091/648] object-cover"
                     />
                     <div className="shadow absolute inset-0 bg-gradient-to-r from-[#0B0B0B] to-[#0B0B0B00] opacity-60"></div>
                   </Link>
@@ -163,7 +163,7 @@ function MainSlider({className}) {
                       alt={blog.images[0].alt}
                       width={82}
                       height={79}
-                      className="w-full h-full  rounded-[0.5rem] object-cover"
+                      className="w-full h-full bg-third rounded-[0.5rem] object-cover"
                     />
                   </div>
                   <h5 className="hidden text-base font-semibold lg:!line-clamp-3">

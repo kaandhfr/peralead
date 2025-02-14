@@ -39,7 +39,7 @@ export const siteSettings = {
                 images: [
                     {
                         id: 0,
-                        path: "./src/assets/articles/article-1.jpg",
+                        path: "/src/assets/articles/article-1.jpg",
                         thumbPath: "/src/assets/articles/article-1.jpg",
                         alt: "Güneş Tsunamisi"
                     }

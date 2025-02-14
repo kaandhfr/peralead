@@ -27,7 +27,7 @@ export default function BlogList() {
                     alt={blog.images[0].alt}
                     width={300}
                     height={170}
-                    className="rounded-lg object-cover w-full h-full"
+                    className="rounded-lg bg-third object-cover w-full h-full"
                   />
                 </Link>
                 <div className="blog-caption">
