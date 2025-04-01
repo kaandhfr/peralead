@@ -50,7 +50,7 @@ export default function HeaderFixed() {
             }
 
             <div className="col-span-6 md:col-span-3 lg:col-span-4 flex items-center justify-end gap-3">
-              <UserButton />
+              <UserButton className="w-10 h-10 flex items-center justify-center" showIcon={true}></UserButton>
               <MenuButton />
             </div>
           </div>

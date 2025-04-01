@@ -159,7 +159,7 @@ function MainSlider({className}) {
                 >
                   <div className="blog-image relative flex-shrink-0 w-full aspect-[4/3] lg:aspect-[82/79] lg:w-[72px] 2xl:w-[82px]">
                     <LazyLoadImage
-                      src={blog.images[0].thumbPath} // use normal <img> attributes as props
+                      src={blog.images[0].thumbPath}
                       alt={blog.images[0].alt}
                       width={82}
                       height={79}
@@ -167,7 +167,7 @@ function MainSlider({className}) {
                     />
                   </div>
                   <h5 className="hidden text-base font-semibold lg:!line-clamp-3">
-                    <Link to={""}>{blog.title}</Link>
+                    <span>{blog.title}</span>
                   </h5>
                 </Link>
               </SwiperSlide>

@@ -15,7 +15,7 @@ export default function Header() {
         <div className="header-top bg-[#2A2A2A] bg-opacity-75 py-4 px-4">
           <div className="container mx-auto">
             <div className="header-top-content flex items-center">
-              <Link to="/" className="logo py-1 mr-auto">
+              <Link to="/" className="logo inline-block py-1 mr-auto">
                 <img src="/logo.svg" alt="" />
               </Link>
 
@@ -41,15 +41,9 @@ export default function Header() {
                 </nav>
               }
               {/* Navigation -end */}
-
-              <button
-                type="button"
-                className="hidden lg:inline-block bg-primary rounded-full text-sm font-medium text-third text-center w-[7rem] h-[2.75rem] transition-all hover:bg-primary-hover ml-6"
-              >
-                Giriş Yap
-              </button>
+              <UserButton className="hidden lg:inline-block bg-primary rounded-full text-sm font-medium text-third text-center w-[7rem] h-[2.75rem] transition-all hover:bg-primary-hover ml-6">Giriş Yap</UserButton>
               <div className="lg:hidden flex items-center justify-end gap-3">
-                <UserButton />
+                <UserButton className="w-10 h-10 flex items-center justify-center" showIcon={true}></UserButton>
                 <MenuButton />
               </div>
             </div>

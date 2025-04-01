@@ -1,17 +1,20 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import { IconArrowRight } from "~/components/icons/icons";
-import BackgroundShadow from "~/components/background-shadow/BackgroundShadow";
+import { toggleMenu } from "~/redux/headerSlice";
 import { siteSettings } from "~/settings/site-settings";
 
 export default function MobileMenu() {
+  const dispatch = useDispatch();
+  const { isOpen } = useSelector((store) => store.header);
+
   return (
     <>
-      <BackgroundShadow></BackgroundShadow>
-
-      <div className="fixed top-0 right-[-26rem] w-[26rem] h-full z-50 py-6 px-8 bg-secondary shadow-lg transition-all">
+      <div className={`mobile-menu-overlay bg-black bg-opacity-50 fixed inset-0 z-[51] duration-300 ease-in-out ${isOpen ? "opacity-100 visible" : " opacity-0 hidden"}`} onClick={() => dispatch(toggleMenu())}></div>
+      <div className={`fixed top-0 w-[26rem] h-full z-[52] py-6 px-8 bg-third-hover shadow-lg duration-300 ease-in-out ${isOpen ? "right-0" : "right-[-26rem]" }`}>
         <section className="mobile-menu-header w-full flex items-center justify-between mb-12">
-          <button className="">
+          <button onClick={() => dispatch(toggleMenu())} className="">
             <IconArrowRight></IconArrowRight>
           </button>
           <Link to="/" className="logo py-1">

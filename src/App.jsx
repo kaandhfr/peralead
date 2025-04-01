@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useCallback  } from "react";
 import Header from "./layouts/Header/Header";
 import Footer from "./layouts/Footer/Footer";
 import { Outlet } from "react-router-dom";
@@ -10,9 +10,10 @@ import HeaderFixed from "./layouts/Header/HeaderFixed";
 import MobileMenu from "./components/mobile-menu/MobileMenu";
 
 function App() {
+
   return (
     <div className="App">
-      <Background/>
+      <Background />
 
       <Header />
       <HeaderFixed />
