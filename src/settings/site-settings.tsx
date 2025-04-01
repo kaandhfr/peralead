@@ -39,8 +39,8 @@ export const siteSettings = {
                 images: [
                     {
                         id: 0,
-                        path: "/public/articles/article-1.jpg",
-                        thumbPath: "/public/articles/article-1.jpg",
+                        path: "/articles/article-1.jpg",
+                        thumbPath: "/articles/article-1.jpg",
                         alt: "Güneş Tsunamisi"
                     }
                 ],
@@ -55,8 +55,8 @@ export const siteSettings = {
                 images: [
                     {
                         id: 0,
-                        path: "/public/articles/article-2.jpg",
-                        thumbPath: "/public/articles/article-2.jpg",
+                        path: "/articles/article-2.jpg",
+                        thumbPath: "/articles/article-2.jpg",
                         alt: "Güneş Tsunamisi"
                     }
                 ],
@@ -71,8 +71,8 @@ export const siteSettings = {
                 images: [
                     {
                         id: 0,
-                        path: "/public/articles/article-3.jpg",
-                        thumbPath: "/public/articles/article-3.jpg",
+                        path: "/articles/article-3.jpg",
+                        thumbPath: "/articles/article-3.jpg",
                         alt: "Güneş Tsunamisi"
                     }
                 ],
@@ -87,8 +87,8 @@ export const siteSettings = {
                 images: [
                     {
                         id: 0,
-                        path: "/public/articles/article-4.jpg",
-                        thumbPath: "/public/articles/article-4.jpg",
+                        path: "/articles/article-4.jpg",
+                        thumbPath: "/articles/article-4.jpg",
                         alt: "Güneş Tsunamisi"
                     }
                 ],
@@ -103,8 +103,8 @@ export const siteSettings = {
                 images: [
                     {
                         id: 0,
-                        path: "/public/articles/article-5.jpg",
-                        thumbPath: "/public/articles/article-5.jpg",
+                        path: "/articles/article-5.jpg",
+                        thumbPath: "/articles/article-5.jpg",
                         alt: "Güneş Tsunamisi"
                     }
                 ],
@@ -119,8 +119,8 @@ export const siteSettings = {
                 images: [
                     {
                         id: 0,
-                        path: "/public/articles/article-6.jpg",
-                        thumbPath: "/public/articles/article-6.jpg",
+                        path: "/articles/article-6.jpg",
+                        thumbPath: "/articles/article-6.jpg",
                         alt: "Güneş Tsunamisi"
                     }
                 ],
@@ -135,8 +135,8 @@ export const siteSettings = {
                 images: [
                     {
                         id: 0,
-                        path: "/public/articles/article-7.jpg",
-                        thumbPath: "/public/articles/article-7.jpg",
+                        path: "/articles/article-7.jpg",
+                        thumbPath: "/articles/article-7.jpg",
                         alt: "Güneş Tsunamisi"
                     }
                 ],
@@ -151,8 +151,8 @@ export const siteSettings = {
                 images: [
                     {
                         id: 0,
-                        path: "/public/articles/article-8.jpg",
-                        thumbPath: "/public/articles/article-8.jpg",
+                        path: "/articles/article-8.jpg",
+                        thumbPath: "/articles/article-8.jpg",
                         alt: "Güneş Tsunamisi"
                     }
                 ],
