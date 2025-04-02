@@ -40,7 +40,7 @@ export default function BlogList() {
                       #BİLİM
                     </Link>
                   </div>
-                  <h3 className="blog-title xl:text-2xl lg:text-xl font-medium lg:leading-[2.25rem] mb-1 sm:mb-4">
+                  <h3 className="blog-title xl:text-2xl lg:text-xl text-lg font-medium lg:leading-[2.25rem] line-clamp-3 mb-1 sm:mb-4">
                     <Link to={"#"}>
                       {blog.title}
                     </Link>

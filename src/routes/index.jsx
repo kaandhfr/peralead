@@ -4,6 +4,7 @@ import Home from "~/pages/Home/Home";
 import AboutUs from "~/pages/AboutUs/AboutUs";
 import store from "~/redux/store";
 import { Provider } from "react-redux";
+import CategoryListingPage from "~/pages/CategoryListingPage/CategoryListingPage";
 
 const routes = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const routes = createBrowserRouter([
       {
         path: "/iletisim",
         element: "iletişim",
+      },
+      {
+        path: "/kategori",
+        element: <CategoryListingPage />,
       },
     ],
   },
