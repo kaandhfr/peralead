@@ -10,7 +10,7 @@ export default function BlogList() {
         {siteSettings.site_blogs.articles.map((blog, index) => {
           return (
             <div className="blog-item flex gap-2 xl:gap-6 mb-8" key={`blog-list#${index}`}>
-              <div className="blog-date flex flex-col items-center text-center w-[36px] sm:w-[44px] md:w-[60px] w-100 flex-shrink-0">
+              <div className="blog-date flex flex-col items-center text-center w-[36px] sm:w-[44px] md:w-[60px] flex-shrink-0">
                 <div className="text-xl md:text-2xl font-medium md:mb-1">16</div>
                 <span className="block text-[0.65rem] md:text-xs text-default-text text-opacity-50">
                   Şubat

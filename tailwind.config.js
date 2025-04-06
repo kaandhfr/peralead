@@ -14,6 +14,8 @@ module.exports = {
         'fourth-hover': '#979696',
         'fifth': '#0A0A0A',
         'fifth-hover': '#101010',
+        'sixth': '#CCCCCC',
+        'sixth-hover': '#CCCCCC',
         'default-text': '#F5F5F5',
         'sub-text': '#7e5bef',
       },

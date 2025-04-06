@@ -5,6 +5,7 @@ import AboutUs from "~/pages/AboutUs/AboutUs";
 import store from "~/redux/store";
 import { Provider } from "react-redux";
 import CategoryListingPage from "~/pages/CategoryListingPage/CategoryListingPage";
+import BlogDetail from "~/pages/BlogDetail/BlogDetail";
 
 const routes = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const routes = createBrowserRouter([
       {
         path: "/kategori",
         element: <CategoryListingPage />,
+      },
+      {
+        path: "/blog",
+        element: <BlogDetail />,
       },
     ],
   },

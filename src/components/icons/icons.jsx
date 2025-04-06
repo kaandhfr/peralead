@@ -1,8 +1,9 @@
 import React from "react";
 
-export function IconMenu({ width = 24, height = 24, color = "black" }) {
+export function IconMenu({ width = 24, height = 24, color = "black", className = "" }) {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 14 14"
@@ -24,9 +25,10 @@ export function IconMenu({ width = 24, height = 24, color = "black" }) {
   );
 }
 
-export function IconUser({ width = 30, height = 30, color = "white" }) {
+export function IconUser({ width = 30, height = 30, color = "white", className = "" }) {
   return (
     <svg
+      className={className}
       viewBox="0 0 32 32"
       width={width}
       height={height}
@@ -39,9 +41,10 @@ export function IconUser({ width = 30, height = 30, color = "white" }) {
   );
 }
 
-export function IconTwitter({ width = 22, height = 16, color = "#A9A9A9" }) {
+export function IconTwitter({ width = 22, height = 16, color = "#A9A9A9", className = "" }) {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 22 16"
@@ -58,9 +61,10 @@ export function IconTwitter({ width = 22, height = 16, color = "#A9A9A9" }) {
   );
 }
 
-export function IconGithub({ width = 22, height = 20, color = "#A9A9A9" }) {
+export function IconGithub({ width = 22, height = 20, color = "#A9A9A9", className = "" }) {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 22 20"
@@ -77,9 +81,10 @@ export function IconGithub({ width = 22, height = 20, color = "#A9A9A9" }) {
   );
 }
 
-export function IconFacebook({ width = 12, height = 20, color = "#A9A9A9" }) {
+export function IconFacebook({ width = 12, height = 20, color = "#A9A9A9", className = "" }) {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 12 20"
@@ -96,9 +101,10 @@ export function IconFacebook({ width = 12, height = 20, color = "#A9A9A9" }) {
   );
 }
 
-export function IconArrowRight({ width = 9, height = 14, color = "#33363F" }) {
+export function IconArrowRight({ width = 9, height = 14, color = "#33363F", className = "" }) {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 9 14"
@@ -109,10 +115,10 @@ export function IconArrowRight({ width = 9, height = 14, color = "#33363F" }) {
   );
 }
 
-export function IconShare({ width = 11, height = 10, color = "#F5F5F5" }) {
+export function IconShare({ width = 11, height = 10, color = "#F5F5F5", className = "flex-shrink-0" }) {
   return (
     <svg
-      className="flex-shrink-0"
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 11 10"
@@ -126,23 +132,39 @@ export function IconShare({ width = 11, height = 10, color = "#F5F5F5" }) {
   )
 }
 
-export function IconLogIn({ width = 14, height = 14, color = "black" }) {
+export function IconLogIn({ width = 14, height = 14, color = "black", className = "" }) {
   return (
-    <svg width={width} height={height} viewBox="0 0 14 14" fill="none">
-      <path d="M9.5 10.5V12.5C9.5 12.7652 9.39464 13.0196 9.20711 13.2071C9.01957 13.3946 8.76522 13.5 8.5 13.5H1.5C1.23478 13.5 0.98043 13.3946 0.792893 13.2071C0.605357 13.0196 0.5 12.7652 0.5 12.5V1.5C0.5 1.23478 0.605357 0.98043 0.792893 0.792893C0.98043 0.605357 1.23478 0.5 1.5 0.5H8.5C8.76522 0.5 9.01957 0.605357 9.20711 0.792893C9.39464 0.98043 9.5 1.23478 9.5 1.5V3.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+    <svg className={className} width={width} height={height} viewBox="0 0 14 14" fill="none">
+      <path d="M9.5 10.5V12.5C9.5 12.7652 9.39464 13.0196 9.20711 13.2071C9.01957 13.3946 8.76522 13.5 8.5 13.5H1.5C1.23478 13.5 0.98043 13.3946 0.792893 13.2071C0.605357 13.0196 0.5 12.7652 0.5 12.5V1.5C0.5 1.23478 0.605357 0.98043 0.792893 0.792893C0.98043 0.605357 1.23478 0.5 1.5 0.5H8.5C8.76522 0.5 9.01957 0.605357 9.20711 0.792893C9.39464 0.98043 9.5 1.23478 9.5 1.5V3.5" stroke={color} stroke-linecap="round" stroke-linejoin="round" />
       <path d="M13.5 7H5.5" stroke={color} strokeLinecap="round" strokeLinejoin="round" />
       <path d="M7.5 5L5.5 7L7.5 9" stroke={color} strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
 
-export function IconLogOut({ width = 14, height = 14, color = "black" }) {
+export function IconLogOut({ width = 14, height = 14, color = "black", className = "" }) {
   return (
-    <svg width={width} height={height} viewBox="0 0 14 14" fill="none">
-      <path d="M9.5 10.5V12.5C9.5 12.7652 9.39464 13.0196 9.20711 13.2071C9.01957 13.3946 8.76522 13.5 8.5 13.5H1.5C1.23478 13.5 0.98043 13.3946 0.792893 13.2071C0.605357 13.0196 0.5 12.7652 0.5 12.5V1.5C0.5 1.23478 0.605357 0.98043 0.792893 0.792893C0.98043 0.605357 1.23478 0.5 1.5 0.5H8.5C8.76522 0.5 9.01957 0.605357 9.20711 0.792893C9.39464 0.98043 9.5 1.23478 9.5 1.5V3.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+    <svg className={className} width={width} height={height} viewBox="0 0 14 14" fill="none">
+      <path d="M9.5 10.5V12.5C9.5 12.7652 9.39464 13.0196 9.20711 13.2071C9.01957 13.3946 8.76522 13.5 8.5 13.5H1.5C1.23478 13.5 0.98043 13.3946 0.792893 13.2071C0.605357 13.0196 0.5 12.7652 0.5 12.5V1.5C0.5 1.23478 0.605357 0.98043 0.792893 0.792893C0.98043 0.605357 1.23478 0.5 1.5 0.5H8.5C8.76522 0.5 9.01957 0.605357 9.20711 0.792893C9.39464 0.98043 9.5 1.23478 9.5 1.5V3.5" stroke={color} stroke-linecap="round" stroke-linejoin="round" />
       <path d="M6.5 7H13.5" stroke={color} stroke-Llinecap="round" strokeLinejoin="round" />
       <path d="M11.5 5L13.5 7L11.5 9" stroke={color} strokeLinecap="round" strokeLinejoin="round" />
     </svg>
-
   );
+}
+
+export function IconFavorite({ width = 19, height = 16, color = "#CCCCCC", className = "" }) {
+  return (
+    <svg className={className} width={width} height={height} viewBox="0 0 19 16" fill="none">
+      <path opacity="0.503302" fillRule="evenodd" clipRule="evenodd" d="M8.43597 15.7388C8.63156 15.9072 8.88253 16 9.14286 16C9.40304 16 9.65416 15.9072 9.84961 15.739C10.59 15.1023 11.3033 14.5043 11.9328 13.9769L11.933 13.9767C13.7748 12.4329 15.3654 11.0997 16.4722 9.78616C17.7095 8.31791 18.2857 6.92567 18.2857 5.40473C18.2857 3.92701 17.7706 2.56372 16.8352 1.56581C15.8887 0.556101 14.5897 0 13.1776 0C12.1221 0 11.1554 0.3282 10.3045 0.975406C9.875 1.3021 9.48591 1.70192 9.14286 2.16828C8.79994 1.70192 8.41072 1.3021 7.98131 0.975406C7.13044 0.3282 6.16378 0 5.10826 0C3.69601 0 2.39718 0.556101 1.45061 1.56581C0.515207 2.56372 0 3.92701 0 5.40473C0 6.92567 0.576311 8.31791 1.81362 9.7863C2.92048 11.0998 4.5113 12.4332 6.35352 13.9772L6.35672 13.9799C6.98507 14.5065 7.69727 15.1035 8.43597 15.7388ZM2.24194 2.29072C2.983 1.50133 4.00167 1.06665 5.11055 1.06665C5.92273 1.06665 6.66853 1.32028 7.32706 1.82043C7.91405 2.26634 8.32286 2.83003 8.5624 3.22445C8.68565 3.42727 8.90261 3.54833 9.14284 3.54833C9.38308 3.54833 9.60003 3.42727 9.72328 3.22445C9.96296 2.83003 10.3718 2.26634 10.9586 1.82043C11.6171 1.32028 12.363 1.06665 13.1753 1.06665C14.284 1.06665 15.3028 1.50133 16.0437 2.29072C16.7958 3.09201 17.2101 4.19967 17.2101 5.40977C17.2101 6.68656 16.7269 7.82845 15.6439 9.11223C14.5978 10.352 13.0425 11.654 11.2417 13.1616L11.2368 13.1657C10.6052 13.6942 9.88948 14.2933 9.14131 14.9333C8.39759 14.2946 7.68302 13.6964 7.05266 13.1687L7.04931 13.166L7.04827 13.1651C5.24561 11.6561 3.68873 10.3529 2.64196 9.11223C1.55874 7.82845 1.07561 6.68656 1.07561 5.40977C1.07561 4.19967 1.48986 3.09201 2.24194 2.29072Z" fill={color} />
+    </svg>
+  )
+}
+
+export function IconFavoriteActive({ width = 19, height = 16, color = "#FF0000", className = "" }) {
+  return (
+    <svg className={className} width={width} height={height} viewBox="0 0 19 16" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.43597 15.7388C8.63156 15.9072 8.88253 16 9.14286 16C9.40304 16 9.65416 15.9072 9.84961 15.739C10.59 15.1023 11.3033 14.5043 11.9328 13.9769L11.933 13.9767C13.7748 12.4329 15.3654 11.0997 16.4722 9.78616C17.7095 8.31791 18.2857 6.92567 18.2857 5.40473C18.2857 3.92701 17.7706 2.56372 16.8352 1.56581C15.8887 0.556101 14.5897 0 13.1776 0C12.1221 0 11.1554 0.3282 10.3045 0.975406C9.875 1.3021 9.48591 1.70192 9.14286 2.16828C8.79994 1.70192 8.41072 1.3021 7.98131 0.975406C7.13044 0.3282 6.16378 0 5.10826 0C3.69601 0 2.39718 0.556101 1.45061 1.56581C0.515207 2.56372 0 3.92701 0 5.40473C0 6.92567 0.576311 8.31791 1.81362 9.7863C2.92048 11.0998 4.5113 12.4332 6.35352 13.9772L6.35672 13.9799C6.98507 14.5065 7.69727 15.1035 8.43597 15.7388ZM2.24194 2.29072C2.983 1.50133 4.00167 1.06665 5.11055 1.06665C5.92273 1.06665 6.66853 1.32028 7.32706 1.82043C7.91405 2.26634 8.32286 2.83003 8.5624 3.22445C8.68565 3.42727 8.90261 3.54833 9.14284 3.54833C9.38308 3.54833 9.60003 3.42727 9.72328 3.22445C9.96296 2.83003 10.3718 2.26634 10.9586 1.82043C11.6171 1.32028 12.363 1.06665 13.1753 1.06665C14.284 1.06665 15.3028 1.50133 16.0437 2.29072C16.7958 3.09201 17.2101 4.19967 17.2101 5.40977C17.2101 6.68656 16.7269 7.82845 15.6439 9.11223C14.5978 10.352 13.0425 11.654 11.2417 13.1616L11.2368 13.1657C10.6052 13.6942 9.88948 14.2933 9.14131 14.9333C8.39759 14.2946 7.68302 13.6964 7.05266 13.1687L7.04931 13.166L7.04827 13.1651C5.24561 11.6561 3.68873 10.3529 2.64196 9.11223C1.55874 7.82845 1.07561 6.68656 1.07561 5.40977C1.07561 4.19967 1.48986 3.09201 2.24194 2.29072Z" fill={color}/>
+      <path d="M7 1.5L9 3L10 2L11.5 1L13.5 0.5L15 1L16 2L17 3L17.5 4.5V6L16.5 8.5L14.5 10.5L9 15.5L3 10L1 7.5L0.5 5L1.5 2.5L3.5 1L5.5 0.5L7 1.5Z" fill={color} />
+    </svg>
+  )
 }

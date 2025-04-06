@@ -58,6 +58,50 @@ svg rect[stroke] {
   opacity: 0.75;
 }
 
+.blog-detail-wrapper .blog-description h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-detail-wrapper .blog-description h3 {
+  color: #ffffff;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.blog-detail-wrapper .blog-description h4 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.blog-detail-wrapper .blog-description h5 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.blog-detail-wrapper .blog-description h6 {
+  color: #ffffff;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.blog-detail-wrapper .blog-description p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog-detail-wrapper .blog-description ul {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog-detail-wrapper .blog-description strong, .blog-detail-wrapper .blog-description b {
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 1280px) {
   html {
     font-size: 14px;
