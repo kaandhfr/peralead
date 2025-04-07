@@ -29,11 +29,9 @@ svg rect[stroke] {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0) 100%);
 }
 
 /* App.css */
@@ -41,6 +39,7 @@ svg rect[stroke] {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: -10000px 5000px;
   }
@@ -98,7 +97,8 @@ svg rect[stroke] {
   margin-bottom: 1rem;
 }
 
-.blog-detail-wrapper .blog-description strong, .blog-detail-wrapper .blog-description b {
+.blog-detail-wrapper .blog-description strong,
+.blog-detail-wrapper .blog-description b {
   font-weight: 600;
 }
 
@@ -111,5 +111,45 @@ svg rect[stroke] {
 @media only screen and (max-width: 575px) {
   html {
     font-size: 12px;
+  }
+
+  .blog-detail-wrapper .blog-description h2 {
+    color: #ffffff;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-detail-wrapper .blog-description h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-detail-wrapper .blog-description h4 {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-detail-wrapper .blog-description h5 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-detail-wrapper .blog-description h6 {
+    color: #ffffff;
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-detail-wrapper .blog-description p {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-detail-wrapper .blog-description ul {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
   }
 }
